@@ -1,36 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
+    flex: 1;
+}
+
+.header,
+.footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.logo {
+    font-weight: bold;
 }
 
 ul {
+    display: inline-block;
     list-style: none;
+    justify-content: space-around;
 }
+
+li {
+    display: inline-block;
+    font-size: xx-small;
+    padding-left: 20px;
+}
+
 a {
     list-style: none;
     text-decoration: none;
     color: white;
 }
 
-.header, .footer {
-    background-color: #1f2937;
+.center-top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.phrases {
+    width: 300px;
+    height: 150px;
+    padding-right: 15px;
+}
+
+.catchphrase {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.catch-subtext {
+    font-size: xx-small;
+    font-weight: 300;
+    color: #E5E7EB;
+    margin-bottom: 5px;
+}
+
+.top-img {
+    height: 150px;
+    width: 300px;
+    border: none;
+    background-color: darkgrey;
+}
+
+button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+button {
+    padding: 6px 18px;
+    border-radius: 8px;
+    background: dodgerblue;
     color: white;
+    border: 1px solid dodgerblue;
+    font-size: x-small;
+    height: 30px;
+    width: 90px;
+}
+
+.middle {
+    flex: 1;
 }
 
 .random-info-text {
     font-weight: 900;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
+    padding: 20px;
 }
 
 .boxes {
     display: flex;
     justify-content: center;
     flex: 1;
-    gap: 100px;
+    gap: 25px;
+    margin: 25px;
 }
 
 .item {
@@ -53,27 +139,68 @@ img {
     font-size: x-small;
 }
 
-
 .center-mid {
     background-color: #E5E7EB;
-    text-align: center;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-button {
-    padding: 8px 16px;
-    border-radius: 8px;
+.quote-box {
+    width: 600px;
+    
+}
+
+.quote {
+    text-align: left;
+    font-style: italic;
+    font-weight: 200;
+    padding-bottom: 0;
+}
+
+.thor {
+    text-align: right;
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.center-bottom { 
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.sign {
+    background-color: dodgerblue;
+    margin: none;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    height: 100px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-text {
+    width: 300px;
+    margin: none;
+}
+
+.signup-text {
+    font-size: xx-small;
+    font-weight: 300;
 }
 
 button.sign-up {
-    background: dodgerblue;
-    border: 1px solid dodgerblue;
-    color: white;
+    border-color: #E5E7EB;
 }
 
 .footer {
-    margin-top: auto;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
+    font-weight: 300;
 }
